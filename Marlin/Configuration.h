@@ -491,9 +491,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 25.84
-  #define DEFAULT_Ki 2.22
-  #define DEFAULT_Kd 75.10
+  #define DEFAULT_Kp 27.77
+  #define DEFAULT_Ki 2.33
+  #define DEFAULT_Kd 82.94
 
 #endif // PIDTEMP
 
@@ -989,7 +989,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -40, -8, -1.1 }
+#define NOZZLE_TO_PROBE_OFFSET { -43, -13, -1.75 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1126,15 +1126,15 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 225
+#define Y_BED_SIZE 225
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-#define Y_MIN_POS -4
+#define Y_MIN_POS -13
 #define Z_MIN_POS 0
-#define X_MAX_POS 248
-#define Y_MAX_POS 236
+#define X_MAX_POS 252
+#define Y_MAX_POS 227
 #define Z_MAX_POS 250
 
 /**
@@ -1317,7 +1317,7 @@
 
   #define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 10              // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 12              // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
@@ -1397,8 +1397,8 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (20*60)
+#define HOMING_FEEDRATE_XY (150*60)
+#define HOMING_FEEDRATE_Z  (60*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
@@ -1517,7 +1517,7 @@
 #define PREHEAT_3_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 235
+#define PREHEAT_2_TEMP_HOTEND 230
 #define PREHEAT_2_TEMP_BED    70
 #define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
 
