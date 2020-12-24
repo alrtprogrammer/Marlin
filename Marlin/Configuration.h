@@ -1133,8 +1133,8 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS -13
 #define Z_MIN_POS 0
-#define X_MAX_POS 252
-#define Y_MAX_POS 227
+#define X_MAX_POS 254
+#define Y_MAX_POS 240
 #define Z_MAX_POS 250
 
 /**
@@ -1397,7 +1397,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_XY (150*60)
+#define HOMING_FEEDRATE_XY (133*60)
 #define HOMING_FEEDRATE_Z  (60*60)
 
 // Validate that endstops are triggered on homing moves
@@ -1509,17 +1509,17 @@
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_1_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_3_LABEL       "ABS"
 #define PREHEAT_3_TEMP_HOTEND 240
-#define PREHEAT_3_TEMP_BED    110
-#define PREHEAT_3_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_3_TEMP_BED    90
+#define PREHEAT_3_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
 #define PREHEAT_2_TEMP_HOTEND 230
 #define PREHEAT_2_TEMP_BED    70
-#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_2_FAN_SPEED   0 // Value from 0 to 255
 
 /**
  * Nozzle Park
