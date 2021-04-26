@@ -1138,7 +1138,7 @@
 #define Y_MIN_POS -13
 #define Z_MIN_POS 0
 #define X_MAX_POS 251
-#define Y_MAX_POS 232
+#define Y_MAX_POS 229
 #define Z_MAX_POS 250
 
 /**
@@ -1401,7 +1401,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_XY (133*60)
+#define HOMING_FEEDRATE_XY (100*60)
 #define HOMING_FEEDRATE_Z  (60*60)
 
 // Validate that endstops are triggered on homing moves
