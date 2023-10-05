@@ -48,7 +48,8 @@
 //
 #define X_STOP_PIN                          PC0   // X-STOP
 #define Y_STOP_PIN                          PC1   // Y-STOP
-#define Z_STOP_PIN                          PC2   // Z-STOP
+//#define Z_STOP_PIN                          PC2   // Z-STOP
+#define Z_STOP_PIN                          PC15   // E0-STOP
 
 //
 // Z Probe must be this pin
@@ -58,9 +59,9 @@
 //
 // Filament Runout Sensor
 //
-#ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                    PC15  // E0-STOP
-#endif
+//#ifndef FIL_RUNOUT_PIN
+//  #define FIL_RUNOUT_PIN                    PC15  // E0-STOP
+//#endif
 
 //
 // Power-loss Detection
@@ -93,6 +94,7 @@
 //
 #define TEMP_0_PIN                          PA0   // Analog Input "TH0"
 #define TEMP_BED_PIN                        PC3   // Analog Input "TB0"
+#define TEMP_CHAMBER_PIN                    PC2   //Z-Stop connector
 
 //
 // Heaters / Fans
