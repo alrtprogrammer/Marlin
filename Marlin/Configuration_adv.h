@@ -30,7 +30,7 @@
  *
  * Basic settings can be found in Configuration.h
  */
-#define CONFIGURATION_ADV_H_VERSION 02010202
+#define CONFIGURATION_ADV_H_VERSION 02010204
 
 // @section develop
 
@@ -3187,8 +3187,8 @@
     //#define U_STALL_SENSITIVITY  8
     //#define V_STALL_SENSITIVITY  8
     //#define W_STALL_SENSITIVITY  8
-    //#define SPI_ENDSTOPS              // TMC2130 only
-    #define IMPROVE_HOMING_RELIABILITY
+    //#define SPI_ENDSTOPS              // TMC2130/TMC5160 only
+    //#define IMPROVE_HOMING_RELIABILITY
   #endif
 
   // @section tmc/config
@@ -4085,7 +4085,7 @@
  * Extras for an ESP32-based motherboard with WIFISUPPORT
  * These options don't apply to add-on WiFi modules based on ESP32 WiFi101.
  */
-#if ENABLED(WIFISUPPORT)
+#if ANY(WIFISUPPORT, ESP3D_WIFISUPPORT)
   //#define WEBSUPPORT          // Start a webserver (which may include auto-discovery) using SPIFFS
   //#define OTASUPPORT          // Support over-the-air firmware updates
   //#define WIFI_CUSTOM_COMMAND // Accept feature config commands (e.g., WiFi ESP3D) from the host
